@@ -45,7 +45,7 @@ TippingPoint <- function(...) UseMethod("TippingPoint")
 #' @param S A integer indicating range of plotting, the default value is 3.
 #' @param n.grid A integer, number of points in the grid, only for continuous case, the default is 150.
 #' @param \dots Additional arguments
-#' @import ggplot2 RColorBrewer Rcpp
+#' @import ggplot2 RColorBrewer
 #' @importFrom reshape2 melt
 #' @importFrom bayesSurv credible.region
 #' @importFrom stats sd prop.test cov mahalanobis pt quantile var as.formula get_all_vars terms

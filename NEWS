@@ -1,3 +1,7 @@
+Version 1.1.0
+-----------------------------------------------------------------------------------------------------
+
+* A function created based on Rcpp is not essential currently, so we plan to remove it to make it more convenient for users to install the pkg without compilation.
 
 
 Version 1.0.0

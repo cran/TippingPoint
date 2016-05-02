@@ -1,7 +1,7 @@
 Package: TippingPoint
 Title: Enhanced Tipping Point Displays the Results of Sensitivity
         Analyses for Missing Data
-Version: 1.0.0
+Version: 1.1.0
 Author: Shengjie Zhang <zhangshengjie@mrbc-nccd.com>,
         Xikun Han <hanxikun2014@163.com> and
         Victoria Liublinska <vliublin@g.harvard.edu>
@@ -18,15 +18,14 @@ Description: Using the idea of "tipping point" (proposed in
    the package provides a visualized method to compare various imputation
    methods by adding the rectangles or convex hulls on the basic plot.
 Depends: R (>= 3.0.0)
-Imports: ggplot2 (>= 2.0.0), RColorBrewer, bayesSurv, reshape2, Rcpp
+Imports: ggplot2 (>= 2.0.0), RColorBrewer, bayesSurv, reshape2
 Suggests: knitr, rmarkdown
 License: GPL-2
 LazyData: true
 Date: 2016-05-01
 RoxygenNote: 5.0.1
 VignetteBuilder: knitr
-LinkingTo: Rcpp
-NeedsCompilation: yes
-Packaged: 2016-05-01 17:39:19 UTC; 1159225156
+NeedsCompilation: no
+Packaged: 2016-05-02 06:19:31 UTC; 1159225156
 Repository: CRAN
-Date/Publication: 2016-05-02 06:24:29
+Date/Publication: 2016-05-02 14:18:45

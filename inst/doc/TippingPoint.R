@@ -69,7 +69,7 @@ TippingPoint(outcome=tippingdata$continuous,treat= tippingdata$treat,
              HistMeanT = c(120), HistMeanC =  c(131,137))
 
 
-## ----impute plot, fig.width=8,fig.height=6-------------------------------
+## ----impute plot, fig.width=8,fig.height=6-----
 
 # Load the imputed dataset
 
@@ -78,7 +78,6 @@ data(imputedata)
 # Show the first 6 rows of the data
 
 head(imputedata)
-
 
 
 ## for binary outcome

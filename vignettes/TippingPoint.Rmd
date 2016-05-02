@@ -1,6 +1,6 @@
 ---
 title: "TippingPoint"
-author: "Shengjie Zhang and Xikun Han"
+author: "Shengjie Zhang & Xikun Han"
 date: "`r Sys.Date()`"
 output: 
   rmarkdown::html_vignette:
@@ -113,7 +113,6 @@ data(imputedata)
 # Show the first 6 rows of the data
 
 head(imputedata)
-
 
 
 ## for binary outcome
