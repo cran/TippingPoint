@@ -31,4 +31,3 @@ TippingPoint(outcome=tippingdata$binary, treat= tippingdata$treat,
 \seealso{
 \code{\link{TippingPoint.default}}, \code{\link{TippingPoint.formula}}.
 }
-

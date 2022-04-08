@@ -1,13 +1,21 @@
+## ---- include = FALSE---------------------------------------------------------
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
 ## ----set, echo=FALSE--------------------------------------------------------------------------------------------------------------------------------
 # Change the width of html file
 options(width = 150)
 
 
 ## ----data-------------------------------------------------------------------------------------------------------------------------------------------
-
-# If you haven't install the package, you can download it from cran
+# the package can be downloaded from cran and github:
 
 # install.packages("TipingPoint")
+
+# devtools::install_github("XikunHan/TippingPoint")
+
 
 library(TippingPoint)
 
@@ -69,7 +77,7 @@ TippingPoint(outcome=tippingdata$continuous,treat= tippingdata$treat,
              HistMeanT = c(120), HistMeanC =  c(131,137))
 
 
-## ----impute plot, fig.width=8,fig.height=6-----
+## ----impute plot, fig.width=8,fig.height=6----------------------------------------------------------------------------------------------------------
 
 # Load the imputed dataset
 

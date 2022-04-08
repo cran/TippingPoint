@@ -4,14 +4,16 @@
 \name{tippingdata}
 \alias{tippingdata}
 \title{An hypothetical dataset used to demonstrate functions.}
-\format{Data frame with 270 rows and 5 variables:
+\format{
+Data frame with 270 rows and 5 variables:
 \itemize{
   \item continuous: continuous outcome
   \item binary: binary outcome
   \item educ: education time(years)
   \item female: 0=male, 1=female
   \item treat: 0=control group, 1=treatment group
-}}
+}
+}
 \usage{
 tippingdata
 }
@@ -19,4 +21,3 @@ tippingdata
 A hypothetical dataset with continuous and binary outcome.
 }
 \keyword{datasets}
-

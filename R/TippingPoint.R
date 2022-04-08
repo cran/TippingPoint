@@ -47,7 +47,6 @@ TippingPoint <- function(...) UseMethod("TippingPoint")
 #' @param \dots Additional arguments
 #' @import ggplot2 RColorBrewer
 #' @importFrom reshape2 melt
-#' @importFrom bayesSurv credible.region
 #' @importFrom stats sd prop.test cov mahalanobis pt quantile var as.formula get_all_vars terms
 #' @importFrom grDevices chull
 #' @importFrom utils head
@@ -75,6 +74,8 @@ TippingPoint.default <- function(outcome, treat, group.infor=FALSE,
                          ind.values = FALSE,
                          impValuesT  = NA,  impValuesC = NA,impValuesColor=NA,
                          show.points = TRUE, point.size=1 , point.shape=19, S=3, n.grid =150, ...) {
+  
+  check_pkg("bayesSurv")
 
   if (is.numeric(outcome)) {
     Yobs<-outcome

@@ -1,42 +1,20 @@
----
-title: "TippingPoint"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{TippingPoint}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
----
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
 
 A manual to show the R package `TippingPoint`.
 
 ## Introduction
 
-The `TippingPoint` package aims to handle missing outcome data by listing out all the possible combinations of missing values in two treatment arms, calculating the corresponding estimated treatment effects and p-values, finding the margin (the so-called Tipping Point) that would change the result of the study, and drawing a colored heat-map to visualize them. In addition, the package provides a visualized method to compare various imputation methods by adding the rectangles or convex hulls on the basic plot. Some examples are displayed below to explain the idea.
+The `TippingPoint` R package aims to handle missing value for outcomes by listing all the possible combinations of missing values in two treatment arms, calculating the estimated treatment effects and p-values, finding the margin (the so-called Tipping Point) that would change the result of a study, and drawing a heat-map to visualize them. In addition, the package provides a visualized method to compare various imputation methods by adding the rectangles or convex hulls on the basic plot. Some examples are displayed below:
 
 
 
-```{r set, echo=FALSE}
-# Change the width of html file
-options(width = 150)
 
-```
-
-
-
-```{r data}
+```r
 # the package can be downloaded from cran and github:
 
-# install.packages("TipingPoint")
+install.packages("TipingPoint")
 
-# devtools::install_github("XikunHan/TippingPoint")
-
+devtools::install_github("XikunHan/TippingPoint")
 
 library(TippingPoint)
 
@@ -54,8 +32,7 @@ head(tippingdata)
 ## Basic plot
 
 
-```{r basic plot, fig.width=8,fig.height=6}
-
+```r
 ## for binary outcome
 
 
@@ -81,8 +58,6 @@ TippingPoint(outcome=tippingdata$binary,treat= tippingdata$treat,
              summary.type = "density", alpha = 0.95, S=1.5, n.grid = 100,
              HistMeanT = c(0.38,0.4), HistMeanC =  c(0.2,0.55))
 
-
-
 # for continuous outcome
 TippingPoint(continuous~treat, data=tippingdata,
              group.infor=TRUE, plot.type = "estimate",ind.values = TRUE,
@@ -104,13 +79,9 @@ TippingPoint(outcome=tippingdata$continuous,treat= tippingdata$treat,
 
 ```
 
-
-
 ## Using imputed data
 
-
-```{r impute plot, fig.width=8,fig.height=6}
-
+```r
 # Load the imputed dataset
 
 data(imputedata)
@@ -183,8 +154,6 @@ TippingPoint(outcome=tippingdata$continuous,treat= tippingdata$treat,
 
 
 
-
-
 ## Reference
 
 The `TippingPoint` package is created based on Liublinska and Rubin's work. For more details:
@@ -193,4 +162,5 @@ The `TippingPoint` package is created based on Liublinska and Rubin's work. For 
 * Liublinska, V. & Rubin, D.B. Sensitivity analysis for a partially missing binary outcome in a two-arm randomized clinical trial. Stat Med 33, 4170-85 (2014).
 * Liublinska, V. (May, 2013) Sensitivity Analyses in Empirical Studies Plagued with Missing Data. PhD Dissertation, Harvard University, https://dash.harvard.edu/handle/1/11124841
 * https://sites.google.com/site/vliublinska/research
+
 

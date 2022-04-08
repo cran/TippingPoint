@@ -31,4 +31,3 @@ TippingPoint(binary~treat, data=tippingdata,
 \seealso{
 \code{\link{TippingPoint}}, \code{\link{TippingPoint.default}}.
 }
-

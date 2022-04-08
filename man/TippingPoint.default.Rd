@@ -4,12 +4,26 @@
 \alias{TippingPoint.default}
 \title{Default method for TippingPoint}
 \usage{
-\method{TippingPoint}{default}(outcome, treat, group.infor = FALSE,
-  plot.type = c("estimate", "p.value", "both"), summary.type = c("density",
-  "credible.region", "convex.hull"), alpha = 0.95, HistMeanT = NULL,
-  HistMeanC = NULL, ind.values = FALSE, impValuesT = NA,
-  impValuesC = NA, impValuesColor = NA, show.points = TRUE,
-  point.size = 1, point.shape = 19, S = 3, n.grid = 150, ...)
+\method{TippingPoint}{default}(
+  outcome,
+  treat,
+  group.infor = FALSE,
+  plot.type = c("estimate", "p.value", "both"),
+  summary.type = c("density", "credible.region", "convex.hull"),
+  alpha = 0.95,
+  HistMeanT = NULL,
+  HistMeanC = NULL,
+  ind.values = FALSE,
+  impValuesT = NA,
+  impValuesC = NA,
+  impValuesColor = NA,
+  show.points = TRUE,
+  point.size = 1,
+  point.shape = 19,
+  S = 3,
+  n.grid = 150,
+  ...
+)
 }
 \arguments{
 \item{outcome}{A  numeric vector of the outcomes, a binary or continuous outcome.}
@@ -65,4 +79,3 @@ TippingPoint(outcome=tippingdata$binary,treat= tippingdata$treat,
 \seealso{
 \code{\link{TippingPoint}}, \code{\link{TippingPoint.formula}}.
 }
-
